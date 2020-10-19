@@ -10,7 +10,13 @@ public class Aeropuerto {
     private String ciudadUbicacion;
     private int cantidadDeVuelosAlDia;
     private Date fechaDeApertura;
-    private boolean vuelosVip;
+    private boolean vuelosVip; 
+
+
+/**atributos de composición*/
+private NegociosComerciales economia = null;
+    private PistaAerea zonaEspecial;
+
 
     public Aeropuerto(String nombre, 
             String ciudadUbicacion, 
@@ -22,8 +28,27 @@ public class Aeropuerto {
         this.cantidadDeVuelosAlDia = cantidadDeVuelosAlDia;
         this.fechaDeApertura = fechaDeApertura;
         this.vuelosVip = vuelosVip;
+
+
+this.zonaEspecial = new PistaAerea (true,"200 metros");
     }
     
+
+public PistaAerea getzonaEspecial (){
+        return this.zonaEspecial;
+    }
+    
+    
+    public NegociosComerciales geteconomia (){
+        return this.economia;
+    }
+    
+    
+    public void seteconomia (NegociosComerciales i){
+        this.economia = i;
+    }
+
+
     /**
      Este método aumenta el número de vuelos al día en 2000 y 
      *posibilita los vuelos VIP
@@ -109,6 +134,8 @@ public class Aeropuerto {
         System.out.println(aeropuertoinf.getNombre());
         System.out.println(aeropuertoinf.getCantidadDeVuelosAlDia());
         System.out.println(aeropuertoinf.getVuelosVip());
+
+Dueño Alexandra = new Dueño ("Pollo Krik",20,"comida",7,true);
         
     }
     
