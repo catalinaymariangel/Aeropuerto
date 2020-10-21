@@ -1,6 +1,8 @@
 
 package aeropuerto;
 
+import java.util.Date;
+
 public class AeropuertoBaseAerea extends Aeropuerto {
 
         private boolean munisionArtilleria;
