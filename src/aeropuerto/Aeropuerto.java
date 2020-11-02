@@ -32,9 +32,9 @@ private NegociosComerciales economia = null;
 
 this.zonaEspecial = new PistaAerea (true,"200 metros");
     }
-    
 
-public PistaAerea getzonaEspecial (){
+
+   public PistaAerea getzonaEspecial (){
         return this.zonaEspecial;
     }
     
