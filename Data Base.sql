@@ -11,7 +11,7 @@ create table aeropuerto (
 create table pista_aerea(
     id integer,
     metros_que_abarca varchar (100),
-    cantidad_de_señalizaciones varchar (30),
+    cantidad_de_señalizaciones integer,
     nombre_aeropuerto varchar (150),
 
     primary key (id)
@@ -20,7 +20,7 @@ create table pista_aerea(
 create table aerolinea(
     numero_nit varchar (200),
     años_de_experiencia_en_el_mercado varchar(20),
-    cantidad_de_aeronaves varchar(100),
+    cantidad_de_aeronaves integer,
 
     primary key (numero_nit)
 );
@@ -57,6 +57,7 @@ add foreign key (nombre_aeropuerto) references aeropuerto (nombre);
 
 alter table maneja
 add foreign key (numero_nit) references aerolinea (numero_nit);
+
 
 
 
