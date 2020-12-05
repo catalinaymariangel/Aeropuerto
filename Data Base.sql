@@ -10,7 +10,7 @@ create table aeropuerto (
 
 create table pista_aerea(
     id integer,
-    metros_que_abarca varchar (100),
+    metros_que_abarca integer,
     cantidad_de_señalizaciones integer,
     nombre_aeropuerto varchar (150),
 
@@ -19,7 +19,7 @@ create table pista_aerea(
 
 create table aerolinea(
     numero_nit varchar (200),
-    años_de_experiencia_en_el_mercado varchar(20),
+    años_de_experiencia_en_el_mercado integer,
     cantidad_de_aeronaves integer,
 
     primary key (numero_nit)
